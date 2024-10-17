@@ -1,6 +1,6 @@
 # Breakout
 
-W Kavanagh. WIP June Summer 2024
+W Kavanagh. June Summer 2024
 
 ## controls
 
@@ -15,16 +15,20 @@ fire ball (green)
 
 # Tasklist
 
-## Suggested fixes (bugs yet to be injected)
+## Suggested fixes
 
-* A reinitialisation that does not reset everything.
-* Collisions not uniform.
-* Paddle growth not centered successfully.
+* Fix the compiler issues in the code
 
-## Suggested extension tasks
+## Suggested tasks
 
-* Give the ball a trail
-* Add screen shake.
+* Improved VFX (ball trail, paddle hit response, brick particle destruction)
 * Better UI (progress bar rather than timer for countdown).
-* GameLoop.
-* Sounds with increasing tone between bounce.
+* GameLoop
+* Better ball physics (Box2D)
+* Leaderboards
+* More ball types (e.g., multiball, sticky ball [where you shoot the ball from the paddle every time], tiny ball, big ball, brick-tracking ball)
+* Sounds with increasing tone between bounces.
+* Implement commentary with calls to an LLM such as LLama
+
+# Time Details and Changelist
+<Add information to this section about the time you've taken for this task along with a professional changelist.>
