@@ -18,7 +18,7 @@ public:
     void loseLife();
     void render();
     void levelComplete();
-    void powerupEffect(POWERUPS pu, float t);
+    //void powerupEffect(POWERUPS pu, float t); // Doesn't have a definition?
 
     Paddle* getPaddle() const;
     BrickManager* getBrickManager() const;

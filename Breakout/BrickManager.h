@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include "Brick.h"
+#include "ParticleSystem.h"
 #include <SFML/Graphics.hpp>
 
 class GameManager;
@@ -15,6 +16,8 @@ public:
 private:
     std::vector<Brick> _bricks;
     sf::RenderWindow* _window;
+    ParticleSystem _particleSystem;
+    sf::Clock _clock;
 
     GameManager* _gameManager;
     static constexpr float TOP_PADDING = 100.0f;

@@ -1,6 +1,4 @@
 #include "GameManager.h"
-#include "Ball.h"
-#include "PowerupManager.h"
 #include <iostream>
 
 GameManager::GameManager(sf::RenderWindow* window)

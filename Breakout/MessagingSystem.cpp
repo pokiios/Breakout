@@ -21,7 +21,7 @@ void MessagingSystem::update(float dt)
 	if (_timeToDisplay == 0.f) return;
 	
 	// increment timer if it should be running, or reset message if expired.
-	if (_messageTimer < _timeToDisplay)
+	if (_messageTimer <= _timeToDisplay)
 	{
 		_messageTimer += dt;
 	}
