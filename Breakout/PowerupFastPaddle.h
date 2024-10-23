@@ -5,6 +5,7 @@
 class PowerupFastPaddle :
     public PowerupBase
 {
+public:
     PowerupFastPaddle(sf::RenderWindow* window, Paddle* paddle, Ball* ball);
     ~PowerupFastPaddle();
 

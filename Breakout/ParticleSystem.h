@@ -15,7 +15,7 @@ public:
         m_particles(count),
         m_vertices(sf::Points, count),
         m_lifetime(sf::seconds(3.f)),
-        m_emitter(0.f, 0.f)
+        m_emitter(-100.f, -100.f)
     {
     }
 

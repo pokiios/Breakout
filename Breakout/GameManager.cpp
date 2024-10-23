@@ -15,6 +15,7 @@ GameManager::GameManager(sf::RenderWindow* window)
 
 void GameManager::initialize()
 {
+    _lives = 3;
     _paddle = new Paddle(_window);
     _brickManager = new BrickManager(_window, this);
     _messagingSystem = new MessagingSystem(_window);
@@ -36,11 +37,20 @@ void GameManager::update(float dt)
     if (_lives <= 0)
     {
         _masterText.setString("Game over.");
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
+        {
+            _masterText.setString("");
+            initialize();
+        }
         return;
     }
     if (_levelComplete)
     {
         _masterText.setString("Level completed.");
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
+        {
+            initialize();
+        }
         return;
     }
     // pause and pause handling
@@ -62,6 +72,12 @@ void GameManager::update(float dt)
     }
     if (_pause)
     {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
+        {
+            initialize();
+            _pause = false;
+            _masterText.setString("");
+        }
         return;
     }
 
