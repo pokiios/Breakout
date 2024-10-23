@@ -1,6 +1,7 @@
 #pragma once
 #include "PowerupBase.h"
 #include "Paddle.h"
+
 class PowerupFastPaddle :
     public PowerupBase
 {

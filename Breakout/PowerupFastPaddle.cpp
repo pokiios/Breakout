@@ -12,6 +12,6 @@ PowerupFastPaddle::~PowerupFastPaddle()
 
 std::pair<POWERUPS, float> PowerupFastPaddle::applyEffect()
 {
-    _paddle->setWidth(1.5f, 5.0f);
-    return { bigPaddle, 5.0f };
+    _paddle->setSpeed(1.5f, 5.f);
+    return { fastPaddle, 5.0f };
 }
