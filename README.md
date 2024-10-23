@@ -33,3 +33,8 @@ fire ball (green)
 
 # Time Details and Changelist
 <Add information to this section about the time you've taken for this task along with a professional changelist.>
+* Fixed compiler issues: 5 minutes
+* implemented particle system: 1 hour
+* implemented fast paddle: 1.5 hour
+* implemented restart/game loop: 30 minutes
+
